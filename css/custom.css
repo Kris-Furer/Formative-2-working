@@ -1,0 +1,250 @@
+Body {
+  font-family:'Montserrat', sans-serif;
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  margin: 0 5% 5% 5%;
+}
+
+h1 {
+  font-size:50px;
+  margin:0px;
+}
+
+h4 {
+font-size: 25px;
+font-weight: 300;
+margin:0px;
+font-style: italic;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  /* border-bottom: solid 0.2px rgb(129, 129, 129); */
+  justify-content: space-between;
+  /* -webkit-box-shadow: 0 8px 4px -4px #7d7d7d;
+  -moz-box-shadow: 0 8px 4px -8px #7d7d7d;
+  box-shadow: 0 8px 4px -12px #7d7d7d; */
+
+}
+
+.nav-item {
+  display: flex;
+  /* background-color: blanchedalmond; */
+  Height: 80px;
+  width: 19%;
+  align-items: center;
+  justify-content:center;
+
+  /* margin-top: 30px; */
+}
+
+.fa-bars,
+.fa-search {
+  font-size: 25px;
+  margin: 0px 15px 0px 15px;
+  color: rgb(70, 70, 70);
+
+}
+
+
+
+
+.mobile-pop-out {
+  height:40vh;
+  background-color:#e7a135;
+  z-index:99;
+  position:fixed;
+  top:0;
+  left:-3000px;
+  width:80vw;
+/* Animation begins */
+  transition-property:left;
+  transition-duration:2s;
+  transition-timing-function:ease
+}
+
+.menu-container {
+  top:0;
+  background-color: #668042;
+}
+
+.menu-container li {
+  
+}
+
+
+.on-screen {
+  left:0;
+  transition:.4s;
+}
+
+
+
+.logo-container {
+  /* I put width at 100% to better align menu and search but it seems odd */
+  width: 100%;
+  height: auto;
+}
+
+
+
+.fa-times {
+  position:
+  right:10px;
+  top:10px;
+}
+
+.logo {
+  width: 250px;
+  /* position: relative; */
+}
+
+.hero-area {
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  place-items:center;
+  color: #ff43ea;
+  position: relative;
+}
+
+.hero-area::before {
+  content: "";
+  background-image: brightness(70%);
+  background-size: cover;
+  background-repeat: no-repeat;
+ background-position:center;
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/student-hero.jpg');
+  filter:brightness(70%);
+}
+
+.hero-text {
+  color: #ffffff;
+  position:relative;
+  text-align: center;
+  /* Ask why top wont work */
+  /* Top:40vh;
+  left:10vh */
+
+}
+
+
+
+.student-hero-img {
+  max-width: 100%;
+}
+
+h3 {
+  font-size: 4vh;
+}
+
+.feature-area {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.flexslider {
+  max-width: 100%;
+}
+
+.img-container {}
+
+/* Carousel Begins---------------------------------------------------------------  */
+/* ------------------------------------------------------------------------------- */
+.carousel-cell {
+  width: 70%;
+  max-height: 80vh;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  display: flex;
+}
+
+/* Carousel text overlays----------------------------------------------------------- */
+.card-text-overlay {
+  color: white;
+}
+
+.card-text-overlay::before {
+  content: "Food and Beverage";
+  width: 90%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 40%;
+  bottom: 40%;
+}
+
+.tech::before {
+  content: "Tech";
+  width: 90%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 40%;
+  bottom: 40%;
+}
+
+.clothing::before {
+  content: "Clothing";
+  width: 90%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 40%;
+  bottom: 40%;
+}
+
+.resources::before {
+  content: "Course Resources";
+  width: 90%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 40%;
+  bottom: 40%;
+}
+
+/* Carousel Ends-------------------------------------------------------------------------------------------------- */
+.button {
+  Padding: 15px;
+  margin: 12% 0% 5% 0%;
+  background-color:#262626;
+  text-align: center;
+  color: #ffffff;
+  -webkit-border-radius: 36px 12px;
+  border: 2px solid #262626;
+  transition: .3s;
+}
+
+.button:hover{
+  background-color:#ffffff;
+  border: 2px solid #262626;
+  color:#262626;
+  transition:.3s;
+}

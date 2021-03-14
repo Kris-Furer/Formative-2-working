@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://use.fontawesome.com/51ef41451f.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scss/custom.css">
+  <title>Student Discount Site</title>
+
+
+
+</head>
+
+<body>
+  <div class="mobile-pop-out">
+    <div class="menu-container">
+      <i id="closeMobileMenu" class='fa fa-times'></i>
+      <ul>
+        <li>Sign Up</li>
+        <li>FAQ</li>
+        <li>Get a Card</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </div>
+
+  <nav>
+
+    <div class="nav-item">
+      <i class='fa fa-bars'></i>
+    </div>
+    <div class="nav-item logo-container">
+      <img class='logo' src="/img/logo2.svg" alt="Yoobee-logo">
+    </div>
+    <div class="nav-item">
+      <i class='fa fa-search'></i>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+    <!-- logo area begins--------------------------------------------------------------->
+
+    <div class="hero-area">
+
+      <div class="hero-text">
+        <h4>Get the most out of your</h4>
+        <h1>Student ID</h1>
+      </div>
+    </div>
+
+
+
+    <h3>Quick Search</h3>
+
+
+
+
+
+    <!-- slider------------------------------------------------------------------------->
+
+    <div class="main-carousel" data-flickity='{ "wrapAround": true }'>
+      <div class="carousel-cell">
+        <h3 class='card-text-overlay'></h3>
+        <img src="img/beverage.png" alt="">
+      </div>
+      <div class="carousel-cell">
+        <h3 class='card-text-overlay tech'></h3>
+        <img src="img/tech.png" alt="">
+      </div>
+      <div class="carousel-cell">
+        <h3 class='card-text-overlay clothing'></h3>
+        <img src="img/clothing.png" alt="">
+      </div>
+      <div class="carousel-cell">
+        <h3 class='card-text-overlay resources'></h3>
+        <img src="img/resources.png" alt="">
+      </div>
+
+    </div>
+    <div class="button">See All Discounts</div>
+  </div>
+
+  <!-- Button------------------------------------------------------------------->
+
+
+  <!-- Jquery CDN------------------------------------------------------------------------>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script>
+    $('document').ready(function() {
+
+      $('.fa-bars').click(function() {
+        $('.mobile-pop-out').addClass('on-screen')
+      });
+
+      $('#closeMobileMenu').click(function() {
+        $('.mobile-pop-out').removeClass('on-screen')
+      });
+
+    });
+  </script>
+
+
+</body>
+
+</html>
